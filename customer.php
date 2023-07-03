@@ -31,13 +31,9 @@ if(empty($customer)) {
     redirect('index.php');
 }
 
-
-
 // RECUPERE TOUTES LES COMMANDES DU Client
 $orders = getOrdersByCustomerNumber($id);
 
-// $order = getOrdersByCustomerNumber($id);
-// d($order);
 
 include './templates/customer.phtml';
 

@@ -37,11 +37,5 @@ $boss = getEmployee($employee['reportsTo']);
 
 $orders = getOrdersByEmployeNumber($id);
 
-
-// d($employee);
-
-
-
-
 // CHARGEMENT DU TEMPLATE DE LA PAGE
 require_once './templates/employee.phtml';
