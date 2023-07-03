@@ -12,7 +12,7 @@ __"format.php"__ : Ce fichier contient une fonction pour formater les nombres en
 __"route.php"__ : Ce fichier contient une fonction pour rediriger l'utilisateur vers une URL spécifique.
 Le dossier "model" contient les fichiers représentant les modèles de données de l'application :
 
-__"customers.php"__ : Gère les opérations liées aux clients.
+__"customers.php"__ : Gère les opérations liées aux clients.<br>
 __"database.php"__ : Établit la connexion à la base de données.
 __"employees.php"__ : Gère les opérations liées aux employés.
 __"orderdetails.php"__ : Gère les opérations liées aux détails des commandes.
