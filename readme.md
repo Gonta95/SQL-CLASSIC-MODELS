@@ -35,7 +35,3 @@ Bootstrap : Framework CSS utilisé pour le développement rapide d'une interface
 Auteur
 Ce projet MVC ClassicModels a été développé par [Votre nom].
 
-Licence
-Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, le modifier et le distribuer conformément aux termes de la licence.
-
-N'hésitez pas à consulter la documentation supplémentaire ou à contacter l'auteur pour plus
