@@ -10,8 +10,8 @@ Le dossier "lib" contient trois fichiers utilitaires :
 __"debug.php"__ : Ce fichier contient une fonction de débogage pour afficher les variables et les tableaux de manière formatée.
 __"format.php"__ : Ce fichier contient une fonction pour formater les nombres en une chaîne de caractères représentant des euros.
 __"route.php"__ : Ce fichier contient une fonction pour rediriger l'utilisateur vers une URL spécifique.
-Le dossier "model" contient les fichiers représentant les modèles de données de l'application :
 
+Le dossier "model" contient les fichiers représentant les modèles de données de l'application :
 __"customers.php"__ : Gère les opérations liées aux clients.<br>
 __"database.php"__ : Établit la connexion à la base de données.
 __"employees.php"__ : Gère les opérations liées aux employés.
