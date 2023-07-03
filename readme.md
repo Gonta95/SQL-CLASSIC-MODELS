@@ -1,37 +1,54 @@
-# ClassicModels MVC Project
+# Classic Models
 
-Ce projet MVC ClassicModels est une application web basée sur le modèle MVC (Modèle-Vue-Contrôleur). Il fournit une interface pour gérer une base de données de modèles de voitures classiques. L'application permet de visualiser, d'ajouter, de modifier et de supprimer des informations sur les clients, les employés, les commandes, les produits, etc.
+Classic Models est un projet qui met en œuvre une architecture MVC (Modèle-Vue-Contrôleur) pour une application de gestion de modèles de produits. L'application permet de gérer des clients, des employés, des commandes et des produits.
 
-## Fonctionnalités
-Affichage des informations détaillées sur les clients, les employés, les commandes et les produits.
-Ajout de nouveaux clients, employés, commandes et produits.
-Modification des informations existantes sur les clients, les employés, les commandes et les produits.
-Suppression des clients, employés, commandes et produits existants.
-Recherche et filtrage des données par catégorie, date, etc.
-Affichage des commandes contenant un produit spécifique.
 Structure du projet
-Le projet MVC ClassicModels est organisé selon la structure suivante :
+Le projet est organisé de la manière suivante :
 
-__index.php__: Point d'entrée de l'application.
-__config.php__: Fichier de configuration contenant les paramètres de connexion à la base de données.
-model/: Répertoire contenant les fichiers de modèle qui interagissent avec la base de données.
-view/: Répertoire contenant les fichiers de vue qui définissent l'apparence des pages.
-controller/: Répertoire contenant les fichiers de contrôleur qui traitent les requêtes utilisateur et coordonnent les actions.
-templates/: Répertoire contenant les fichiers de modèle réutilisables pour l'affichage des composants communs.
-assets/: Répertoire contenant les fichiers CSS, JavaScript et les ressources statiques nécessaires à l'interface utilisateur.
-Installation
-Clonez ce dépôt dans votre répertoire de projet ou téléchargez-le sous forme d'archive ZIP.
-Assurez-vous que vous disposez d'un serveur Web (comme Apache) avec PHP et MySQL installés et configurés.
-Importez le fichier de base de données fourni (classicmodels.sql) dans votre serveur MySQL pour créer la structure de la base de données et y insérer les données initiales.
-Ouvrez le fichier config.php et modifiez les paramètres de connexion à la base de données en fonction de votre configuration.
-Placez le projet dans le répertoire racine de votre serveur Web.
-Accédez à l'URL de votre projet dans votre navigateur pour lancer l'application.
-Technologies utilisées
-PHP : Langage de programmation utilisé pour la logique de l'application et l'interaction avec la base de données.
-MySQL : Système de gestion de base de données relationnelle utilisé pour stocker les données.
-HTML/CSS : Langages de balisage utilisés pour la structure et le style des pages.
-JavaScript : Langage de programmation utilisé pour les interactions dynamiques côté client.
-Bootstrap : Framework CSS utilisé pour le développement rapide d'une interface utilisateur réactive et esthétique.
-Auteur
-Ce projet MVC ClassicModels a été développé par [Votre nom].
+Le dossier "lib" contient trois fichiers utilitaires :
 
+__"debug.php"__ : Ce fichier contient une fonction de débogage pour afficher les variables et les tableaux de manière formatée.
+__"format.php"__ : Ce fichier contient une fonction pour formater les nombres en une chaîne de caractères représentant des euros.
+__"route.php"__ : Ce fichier contient une fonction pour rediriger l'utilisateur vers une URL spécifique.
+Le dossier "model" contient les fichiers représentant les modèles de données de l'application :
+
+__"customers.php"__ : Gère les opérations liées aux clients.
+__"database.php"__ : Établit la connexion à la base de données.
+__"employees.php"__ : Gère les opérations liées aux employés.
+__"orderdetails.php"__ : Gère les opérations liées aux détails des commandes.
+__"orders.php"__ : Gère les opérations liées aux commandes.
+__"products.php"__ : Gère les opérations liées aux produits.
+Le dossier "templates" contient les fichiers de modèle utilisés pour afficher les vues de l'application.
+
+Les fichiers de contrôleurs :
+
+__"customer.php"__ : Gère les requêtes liées aux clients.
+__"employee.php"__ : Gère les requêtes liées aux employés.
+__"index.php"__ : Gère les requêtes liées à la page d'accueil.
+__"order.php"__ : Gère les requêtes liées aux commandes.
+__"product.php"__ : Gère les requêtes liées aux produits.
+
+Utilisation
+L'application Classic Models utilise le modèle MVC pour organiser le code et séparer les responsabilités. Les modèles sont responsables de l'accès aux données et des opérations de base de données. Les contrôleurs gèrent les requêtes utilisateur et coordonnent les actions appropriées. Les vues sont responsables de l'affichage des données.
+
+Chaque page de l'application est associée à un contrôleur qui gère les actions spécifiques pour cette page. Les contrôleurs utilisent les modèles pour interagir avec la base de données et récupérer les données nécessaires. Les vues utilisent les fichiers de modèle pour afficher les données de manière formatée.
+
+Prérequis
+Pour exécuter l'application Classic Models, les prérequis suivants sont nécessaires :
+
+Un serveur web (par exemple, Apache) configuré avec PHP.
+Un serveur de base de données (par exemple, MySQL) avec les tables nécessaires : customers, employees, orderdetails, orders, products.
+Configuration
+Pour configurer l'application Classic Models, suivez les étapes suivantes :
+
+Assurez-vous que vous avez créé une base de données et configuré les tables nécessaires.
+Modifiez le fichier "database.php" dans le dossier "model" pour spécifier les informations de connexion à votre base de données.
+Placez les fichiers du projet dans le répertoire racine de votre serveur web.
+Contribuer
+Les contributions à l'amélioration de l'application Classic Models sont les bienvenues. Si vous souhaitez contribuer, veuillez suivre les étapes suivantes :
+
+Clonez le dépôt du projet.
+Effectuez les modifications souhaitées.
+Soumettez une demande d'extraction en expliquant les modifications apportées.
+Auteurs
+Le projet Classic Models a été développé par [Guillaume Nairaince] au cours d'un exercice à la Passerelle.
