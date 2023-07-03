@@ -1,0 +1,19 @@
+<?php include './templates/blocs/header.phtml' ?>
+<main>
+    <section id="category-models">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Modèles de la catégorie</h2>
+                    <ul>
+                        <?php foreach($models as $model): ?>
+                        <li><?=$model['model_name']?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php include './templates/blocs/footer.phtml' ?>
